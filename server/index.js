@@ -15,5 +15,9 @@ massive(CONNECTION_STRING)
 
 app.use(express.json())
 
+app.get("/api/housing",controller.add)
+app.post("/api/housing",controller.read)
+app.delete("/api/housing/:id",controller.destroy)
+
 
 app.listen(SERVER_PORT, ()=> console.log(`listening on port ${SERVER_PORT}`))

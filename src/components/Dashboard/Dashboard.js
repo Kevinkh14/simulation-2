@@ -3,6 +3,7 @@ import House from '../House/House'
 import {Link} from 'react-router-dom'
 import './dash.css'
 import Wizard from '../Wizard/Wizard'
+import axios from 'axios'
 
 
 export default class Dashboard extends Component{
@@ -11,6 +12,13 @@ constructor(){
     this.state={
         list:[]
     }
+}
+componentDidMount(){
+    axios
+    .get("/api/housing")
+    .then(response =>{
+        this.setState({house:response.data})
+    })
 }
 
     render(){

@@ -6,6 +6,7 @@ import Wizard from './components/Wizard/Wizard';
 import Header from './components/Header/Header';
 import {HashRouter, Link} from 'react-router-dom'
 import routes from './routes'
+
 function App() {
   return (
     <HashRouter>
