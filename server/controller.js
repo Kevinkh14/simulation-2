@@ -1,9 +1,6 @@
 let houses = []
 // get sql to work
 const add = (req,res)=>{
-    houses.push(req.body)
-    res.json(houses)
-    res.status(200)
     const db =req.app.get('db')
     const{property_name,adress,city,state,zip}=req.body
 
@@ -18,7 +15,7 @@ const read =(req,res)=>{
 
     db.read()
     .then(houses => res.status(200).send(houses))
-    .catch(err =>{res.SendStatus(500)})
+    .catch(err =>{res.sendStatus(500)})
 }
 const destroy = (req,res)=>{
     houses.splice(+req.params.id,1)
