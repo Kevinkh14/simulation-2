@@ -1,0 +1,18 @@
+.wiz{
+    width: 50vw;
+    background-color: #e5f4ec;
+}
+.wizSub{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: space-between;
+}
+.wizContainer{
+    margin: 20px auto;
+    width: 70%;
+}

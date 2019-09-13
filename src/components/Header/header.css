@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: #519872;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+   
+}
+.houser{
+    left: 445px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;  
+    position: absolute;
+    top: 23px;
+}
